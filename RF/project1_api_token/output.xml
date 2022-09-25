@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20220924 13:31:28.260" rpa="false" schemaversion="3">
+<suite id="s1" name="Tc 08" source="/home/aaron/besquare-deriv/RF/project1_api_token/tc_08.robot">
+<test id="s1-t1" name="TC 08" line="8">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.5</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20220924 13:31:28.341" endtime="20220924 13:31:28.341"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://app.deriv.com/account/api-token/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220924 13:31:28.342" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com/account/api-token/'.</msg>
+<status status="PASS" starttime="20220924 13:31:28.341" endtime="20220924 13:31:42.170"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220924 13:31:42.171" endtime="20220924 13:31:42.777"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 13:31:42.778" endtime="20220924 13:31:43.301"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='email']</arg>
+<arg>aaron+4@besquare.com.my</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220924 13:31:43.302" level="INFO">Typing text 'aaron+4@besquare.com.my' into text field '//input[@type='email']'.</msg>
+<status status="PASS" starttime="20220924 13:31:43.301" endtime="20220924 13:31:44.923"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='password']</arg>
+<arg>C0rrect_p4ssword</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220924 13:31:44.924" level="INFO">Typing text 'C0rrect_p4ssword' into text field '//input[@type='password']'.</msg>
+<status status="PASS" starttime="20220924 13:31:44.923" endtime="20220924 13:31:46.536"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 13:31:46.537" level="INFO">Clicking element '//button[@type='submit']'.</msg>
+<status status="PASS" starttime="20220924 13:31:46.536" endtime="20220924 13:32:07.008"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//h4[@class='dc-text da-article__header']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 13:32:07.009" endtime="20220924 13:32:07.531"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[text()='Admin']//parent::label</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:07.532" level="INFO">Clicking element '//*[text()='Admin']//parent::label'.</msg>
+<status status="PASS" starttime="20220924 13:32:07.532" endtime="20220924 13:32:08.626"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@type='text']</arg>
+<arg>bill</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:08.627" level="INFO">Typing text 'bill' into text field '//input[@type='text']'.</msg>
+<status status="PASS" starttime="20220924 13:32:08.626" endtime="20220924 13:32:10.332"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:10.333" level="INFO">Clicking button '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-btn__button-group da-api-token__button']'.</msg>
+<status status="PASS" starttime="20220924 13:32:10.332" endtime="20220924 13:32:12.954"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[text()='bill']//ancestor::td[@class='da-api-token__table-cell da-api-token__table-cell--name']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 13:32:12.954" endtime="20220924 13:32:13.484"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//*[text()='Admin']//ancestor::td[@class='da-api-token__table-cell']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 13:32:13.485" endtime="20220924 13:32:14.008"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="dc-icon dc-clipboard"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:14.009" level="INFO">Clicking element '//*[@class="dc-icon dc-clipboard"]'.</msg>
+<status status="PASS" starttime="20220924 13:32:14.009" endtime="20220924 13:32:15.079"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 13:32:15.079" endtime="20220924 13:32:15.597"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:15.598" level="INFO">Clicking button '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']'.</msg>
+<status status="PASS" starttime="20220924 13:32:15.598" endtime="20220924 13:32:18.187"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-icon da-api-token__visibility-icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:18.188" level="INFO">Clicking element '//*[@class='dc-icon da-api-token__visibility-icon']'.</msg>
+<status status="PASS" starttime="20220924 13:32:18.187" endtime="20220924 13:32:19.268"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//p[@class="dc-text"]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220924 13:32:19.268" endtime="20220924 13:32:19.782"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class='dc-icon dc-clipboard da-api-token__delete-icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:19.783" level="INFO">Clicking element '//*[@class='dc-icon dc-clipboard da-api-token__delete-icon']'.</msg>
+<status status="PASS" starttime="20220924 13:32:19.782" endtime="20220924 13:32:20.870"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220924 13:32:20.871" level="INFO">Clicking button '//button[@class='dc-btn dc-btn__effect dc-btn--primary dc-btn__large dc-dialog__button']'.</msg>
+<status status="PASS" starttime="20220924 13:32:20.871" endtime="20220924 13:32:23.475"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
+<arg>//*[text()='bill']//ancestor::td[@class='da-api-token__table-cell da-api-token__table-cell--name']</arg>
+<doc>Waits until ``text`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220924 13:32:23.475" endtime="20220924 13:32:24.002"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220924 13:32:24.002" endtime="20220924 13:32:24.562"/>
+</kw>
+<status status="PASS" starttime="20220924 13:31:28.340" endtime="20220924 13:32:24.562"/>
+</test>
+<status status="PASS" starttime="20220924 13:31:28.261" endtime="20220924 13:32:24.564"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc 08">Tc 08</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
